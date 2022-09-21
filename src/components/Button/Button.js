@@ -1,4 +1,9 @@
-export const Button = () => {
+import "./button.css";
 
-  return <buton>Glass UI Button</buton>;
+export const Button = () => {
+  return (
+    <buton type="button" className="bt-glass">
+      Glass Button
+    </buton>
+  );
 };

@@ -1,0 +1,10 @@
+.bt-glass {
+  padding: 10px;
+  border: 2px solid blue;
+  background: yellow;
+  border-radius: 20px;
+}
+
+.bt-glass:hover {
+  cursor: pointer;
+}
