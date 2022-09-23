@@ -1,9 +1,14 @@
 import "./button.css";
 
-export const Button = () => {
+export const Button = ({ backgroundColor, size, label, onClick }) => {
   return (
-    <buton type="button" className="bt-glass">
-      Glass Button
+    <buton
+      backgroundColor={backgroundColor}
+      size={size}
+      onClick={onClick}
+      className="bt-glass"
+    >
+      {label}
     </buton>
   );
 };
