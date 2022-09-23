@@ -1,10 +1,13 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import { Button } from "../src/components/Button/Button";
 
-import { Button } from "../src/components/Button";
+export default {
+  title: "Button",
+  component: Button,
+};
 
-const stories = storiesOf("Button Test", module);
+const Template = (args) => <Button {...args} />;
 
-stories.add("Button", () => {
-  return <Button />;
-});
+export const GlassButton = Template.bind({});
+GlassButton.args = {
+  backgroundColor: "yellow",
+};
