@@ -3,13 +3,22 @@ import { Button } from "../src/components/Button/Button";
 export default {
   title: "Component/Button",
   component: Button,
+  argTypes: {
+    onClick: "",
+  },
 };
 
 const Template = (args) => <Button {...args} />;
 
+export const Default = Template.bind({});
+Default.args = {
+  label: "Hello",
+};
+
 export const Large = Template.bind({});
 Large.args = {
-  backgroundColor: "yellow",
+  backgroundColor: "rgba(255, 255, 255, 0.5)",
+  backdropFilter: "blur(20px)",
   size: "md",
   label: "Glass Button",
 };

@@ -1,11 +1,18 @@
 import "./button.css";
 import PropTypes from "prop-types";
 
-export const Button = ({ backgroundColor, size, label, onClick }) => {
+export const Button = ({
+  backgroundColor,
+  backdropFilter,
+  size,
+  label,
+  onClick,
+}) => {
   return (
     <buton
       style={{
         backgroundColor: backgroundColor,
+        backdropFilter: backdropFilter,
       }}
       size={size}
       onClick={onClick}
