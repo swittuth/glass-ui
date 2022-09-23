@@ -1,9 +1,12 @@
 import "./button.css";
+import PropTypes from "prop-types";
 
 export const Button = ({ backgroundColor, size, label, onClick }) => {
   return (
     <buton
-      backgroundColor={backgroundColor}
+      style={{
+        backgroundColor: backgroundColor,
+      }}
       size={size}
       onClick={onClick}
       className="bt-glass"
@@ -11,4 +14,10 @@ export const Button = ({ backgroundColor, size, label, onClick }) => {
       {label}
     </buton>
   );
+};
+
+Button.propTypes = {
+  size: PropTypes.string,
+  label: PropTypes.string,
+  backgroundColor: PropTypes.string,
 };
